@@ -1,0 +1,81 @@
+# HashDam Robots.txt
+# https://hashdam.io/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://hashdam.io/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Disallow crawling of admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow crawling of important pages
+Allow: /
+Allow: /#about
+Allow: /#comparison
+Allow: /#features
+Allow: /#asic
+Allow: /#calculator
+Allow: /#applications
+Allow: /#business
+Allow: /#process
+Allow: /#products
+Allow: /#statistics
+Allow: /#pricing
+Allow: /#contact
+
+# Allow images and CSS for better rendering
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.ico$
+
+# Special instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# Block malicious bots
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

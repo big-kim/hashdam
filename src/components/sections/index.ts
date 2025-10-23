@@ -1,0 +1,14 @@
+export { HeroSection } from './Hero';
+export { LogoCloudsSection } from './LogoClouds';
+export { ComparisonSection } from './Comparison';
+export { ASICSection } from './ASIC';
+export { FeaturesSection } from './Features';
+export { CalculatorSection } from './Calculator';
+export { ApplicationsSection } from './Applications';
+export { BusinessBenefitsSection } from './BusinessBenefits';
+export { default as HowToProcessSection } from './HowToProcess/HowToProcessSection';
+export { default as ProductPricingSection } from './ProductPricing/ProductPricingSection';
+export { default as StatisticsSection } from './StatisticsSection';
+export { default as MembershipSection } from './MembershipSection';
+export { default as CTASection } from './CTASection';
+export { default as FooterSection } from './FooterSection';
