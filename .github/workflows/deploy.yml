@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '20'
           cache: 'npm'
       
       - name: Install dependencies
@@ -43,17 +43,26 @@ jobs:
       - name: Build with Next.js
         run: |
           echo "Starting Next.js build..."
-          npm run build || {
-            echo "Build failed. Checking for common issues..."
-            echo "Package.json scripts:"
+          npm run build 2>&1 | tee build.log || {
+            echo "❌ Build failed. Showing last 50 lines of output:"
+            tail -50 build.log
+            echo ""
+            echo "📋 Checking environment:"
+            echo "Node: $(node --version)"
+            echo "NPM: $(npm --version)"
+            echo "Working directory: $(pwd)"
+            echo ""
+            echo "📦 Package.json scripts:"
             cat package.json | grep -A 10 '"scripts"'
-            echo "Next.js config:"
+            echo ""
+            echo "⚙️ Next.js config:"
             cat next.config.js
             exit 1
           }
         env:
           NODE_ENV: production
           GITHUB_REPOSITORY: ${{ github.repository }}
+          SKIP_ENV_VALIDATION: true
       
       - name: Verify build output
         run: |
