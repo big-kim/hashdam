@@ -27,6 +27,7 @@ const notoSansKR = Noto_Sans_KR({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://hashdam.io'),
   title: {
     default: 'HashDam - 클라우드 마이닝 플랫폼 | 비트코인 채굴 서비스',
     template: '%s | HashDam'

@@ -4,9 +4,10 @@ const nextConfig = {
   ...(process.env.NODE_ENV === 'production' && {
     output: 'export',
     trailingSlash: true,
-    // GitHub Pages에서 저장소 이름이 hashdam이므로 basePath 설정
-    basePath: '/hashdam',
-    assetPrefix: '/hashdam',
+    // GitHub Actions에서 GITHUB_REPOSITORY 환경변수를 통해 저장소 이름 자동 감지
+    // 또는 기본값으로 hashdam 사용
+    basePath: process.env.GITHUB_REPOSITORY ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}` : '/hashdam',
+    assetPrefix: process.env.GITHUB_REPOSITORY ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}` : '/hashdam',
   }),
   images: {
     // 정적 export를 사용할 때는 이미지 최적화 비활성화
