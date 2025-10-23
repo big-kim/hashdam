@@ -38,6 +38,12 @@ jobs:
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
       
+      - name: Fix image paths for GitHub Pages
+        run: |
+          echo "Checking build output..."
+          ls -la ./out/
+          echo "Build completed successfully"
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       

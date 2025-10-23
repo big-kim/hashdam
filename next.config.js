@@ -4,6 +4,7 @@ const nextConfig = {
   ...(process.env.NODE_ENV === 'production' && {
     output: 'export',
     trailingSlash: true,
+    // GitHub Pages에서 저장소 이름이 hashdam이므로 basePath 설정
     basePath: '/hashdam',
     assetPrefix: '/hashdam',
   }),
