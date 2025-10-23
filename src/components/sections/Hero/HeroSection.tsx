@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { Button, RippleEffect, TypingEffect } from '@/components/ui';
 import { useTranslation } from '@/hooks/useTranslation';
+import { getImagePath } from '@/utils/imagePath';
 import { fadeInUp, slideInLeft, slideInRight, staggerContainer, staggerItem, floatingAnimation, hoverScale, hoverLift, pulseAnimation, enhancedPulseAnimation, mobileScrollContainer, mobileScrollItem, mobileContentFloat, mobileContentPulse, menuItemHover, menuItemTap } from '@/lib/animations';
 
 const HeroSection: React.FC = () => {
@@ -79,7 +80,7 @@ const HeroSection: React.FC = () => {
       {/* Background */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/images/background.png"
+          src={getImagePath("/images/background.png")}
           alt="Hero background"
           width={1440}
           height={866}
@@ -116,7 +117,7 @@ const HeroSection: React.FC = () => {
                 whileHover={hoverScale}
               >
                 <Image
-                  src="/images/chield-light0.svg"
+                  src={getImagePath("/images/chield-light0.svg")}
                   alt="Shield icon"
                   width={24}
                   height={24}
@@ -208,7 +209,7 @@ const HeroSection: React.FC = () => {
                 >
                   <div className="button-base px-[10px] py-2 sm:py-3 md:py-4 flex items-center justify-center gap-1 sm:gap-2">
                     <Image
-                      src="/images/essential-icon0.svg"
+                      src={getImagePath("/images/essential-icon0.svg")}
                       alt="Essential icon"
                       width={24}
                       height={24}
@@ -318,7 +319,7 @@ const HeroSection: React.FC = () => {
                   }}
                 >
                   <Image
-                    src="/images/image-470.png"
+                    src={getImagePath("/images/image-470.png")}
                     alt="Mining visualization"
                     width={221}
                     height={134}
@@ -419,7 +420,7 @@ const HeroSection: React.FC = () => {
                   }}
                 >
                   <Image
-                    src="/images/vector-90.svg"
+                    src={getImagePath("/images/vector-90.svg")}
                     alt="Chart visualization"
                     width={212}
                     height={117}
@@ -454,7 +455,7 @@ const HeroSection: React.FC = () => {
                       variants={staggerContainer}
                     >
                       <motion.div variants={staggerItem}>
-                        <Image src="/images/image-390.png" alt="LTC" width={38} height={38} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(34px, 4.5vw, 42px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
+                        <Image src={getImagePath("/images/image-390.png")} alt="LTC" width={38} height={38} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(34px, 4.5vw, 42px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
                       </motion.div>
                       <motion.div 
                         className="dogecoin-badge bg-[#ba9f33] rounded-[47.27px] relative"
@@ -463,7 +464,7 @@ const HeroSection: React.FC = () => {
                         whileHover={{ scale: 1.2, rotate: 10 }}
                       >
                         <Image
-                          src="/images/layer-20.svg"
+                          src={getImagePath("/images/layer-20.svg")}
                           alt="DOGE"
                           width={29}
                           height={29}
@@ -473,10 +474,10 @@ const HeroSection: React.FC = () => {
                         />
                       </motion.div>
                       <motion.div variants={staggerItem}>
-                        <Image src="/images/image-400.png" alt="BELLS" width={38} height={38} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(34px, 4.5vw, 42px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
+                        <Image src={getImagePath("/images/image-400.png")} alt="BELLS" width={38} height={38} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(34px, 4.5vw, 42px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
                       </motion.div>
                       <motion.div variants={staggerItem}>
-                        <Image src="/images/image-410.png" alt="LKY" width={38} height={39} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(35px, 4.6vw, 43px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
+                        <Image src={getImagePath("/images/image-410.png")} alt="LKY" width={38} height={39} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(35px, 4.6vw, 43px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
                       </motion.div>
                     </motion.div>
                     <motion.div 
@@ -486,16 +487,16 @@ const HeroSection: React.FC = () => {
                       variants={staggerContainer}
                     >
                       <motion.div variants={staggerItem}>
-                        <Image src="/images/image-430.png" alt="PEP" width={38} height={38} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(34px, 4.5vw, 42px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
+                        <Image src={getImagePath("/images/image-430.png")} alt="PEP" width={38} height={38} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(34px, 4.5vw, 42px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
                       </motion.div>
                       <motion.div variants={staggerItem}>
-                        <Image src="/images/image-440.png" alt="JKC" width={35} height={35} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 39px)', height: 'clamp(34px, 4.5vw, 39px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
+                        <Image src={getImagePath("/images/image-440.png")} alt="JKC" width={35} height={35} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 39px)', height: 'clamp(34px, 4.5vw, 39px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
                       </motion.div>
                       <motion.div variants={staggerItem}>
-                        <Image src="/images/image-420.png" alt="DINGO" width={38} height={38} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(34px, 4.5vw, 42px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
+                        <Image src={getImagePath("/images/image-420.png")} alt="DINGO" width={38} height={38} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(34px, 4.5vw, 42px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
                       </motion.div>
                       <motion.div variants={staggerItem}>
-                        <Image src="/images/image-450.png" alt="SHIC" width={38} height={38} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(34px, 4.5vw, 42px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
+                        <Image src={getImagePath("/images/image-450.png")} alt="SHIC" width={38} height={38} className="flex-shrink-0 object-cover" style={{ width: 'clamp(34px, 4.5vw, 42px)', height: 'clamp(34px, 4.5vw, 42px)' }} unoptimized onError={(e) => e.currentTarget.style.display = 'none'} />
                       </motion.div>
                     </motion.div>
                     </motion.div>
@@ -506,7 +507,7 @@ const HeroSection: React.FC = () => {
               <div
                 className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden"
                 style={{
-                  backgroundImage: 'url(/images/i-phone-x0.png)',
+                  backgroundImage: `url(${getImagePath("/images/i-phone-x0.png")})`,
                   backgroundSize: 'contain',
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center',
