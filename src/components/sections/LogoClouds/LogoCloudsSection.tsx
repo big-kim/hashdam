@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { staggerContainer, staggerItem } from '@/lib/animations';
+import { getImagePath } from '@/utils/imagePath';
 
 const LogoCloudsSection: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ const LogoCloudsSection: React.FC = () => {
         >
           {/* Top Divider */}
           <div className="divider w-full h-px relative">
-            <Image src="/images/logo-cloud/divider0.svg"
+            <Image src={getImagePath("/images/logo-cloud/divider0.svg")}
               alt=""
               width={1216}
               height={1}
@@ -35,7 +36,7 @@ const LogoCloudsSection: React.FC = () => {
               variants={staggerItem}
               whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
             >
-              <Image src="/images/logo-cloud/group0.svg"
+              <Image src={getImagePath("/images/logo-cloud/group0.svg")}
                 alt="Partner logo 1"
                 width={77}
                 height={24}
@@ -50,7 +51,7 @@ const LogoCloudsSection: React.FC = () => {
               variants={staggerItem}
               whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
             >
-              <Image src="/images/logo-cloud/group1.svg"
+              <Image src={getImagePath("/images/logo-cloud/group1.svg")}
                 alt="Partner logo 2"
                 width={106}
                 height={24}
@@ -66,14 +67,14 @@ const LogoCloudsSection: React.FC = () => {
               whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
             >
               <Image
-                src="/images/logo-cloud/image-560.png"
+                src={getImagePath("/images/logo-cloud/image-560.png")}
                 alt="Partner logo 3 icon"
                 width={24}
                 height={24}
                 className="w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 object-cover"
               />
               <Image
-                src="/images/logo-cloud/image-550.png"
+                src={getImagePath("/images/logo-cloud/image-550.png")}
                 alt="Partner logo 3 text"
                 width={118}
                 height={14}
@@ -88,7 +89,7 @@ const LogoCloudsSection: React.FC = () => {
               whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
             >
               <Image
-                src="/images/logo-cloud/image-540.png"
+                src={getImagePath("/images/logo-cloud/image-540.png")}
                 alt="Partner logo 4"
                 width={151}
                 height={24}
@@ -99,7 +100,7 @@ const LogoCloudsSection: React.FC = () => {
 
           {/* Bottom Divider */}
           <div className="divider2 w-full h-px relative">
-            <Image src="/images/logo-cloud/divider1.svg"
+            <Image src={getImagePath("/images/logo-cloud/divider1.svg")}
               alt=""
               width={1216}
               height={1}

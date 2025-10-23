@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { staggerContainer, staggerItem } from '@/lib/animations';
 import { useTranslation } from '@/hooks/useTranslation';
+import { getImagePath } from '@/utils/imagePath';
 
 const ComparisonSection: React.FC = () => {
   const t = useTranslation();
@@ -68,7 +69,7 @@ const ComparisonSection: React.FC = () => {
                 {/* Card Header */}
                 <div className="frame-1171275935 flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg px-3 py-2">
                   <img
-                    src="/images/discount0.svg"
+                    src={getImagePath("/images/discount0.svg")}
                     alt="Discount icon"
                     width={32}
                     height={32}
@@ -82,7 +83,7 @@ const ComparisonSection: React.FC = () => {
                 {/* Card Image */}
                 <div className="image-container w-full max-w-[240px] h-[120px] sm:h-[160px] flex items-center justify-center">
                   <img
-                    src="/images/online-shopping-discount-vouchers0.svg"
+                    src={getImagePath("/images/online-shopping-discount-vouchers0.svg")}
                     alt="Online shopping discount vouchers"
                     className="w-full h-full object-contain"
                   />
@@ -118,7 +119,7 @@ const ComparisonSection: React.FC = () => {
                 {/* Card Header */}
                 <div className="frame-1171275934 flex items-center gap-2 sm:gap-3 bg-green-50 rounded-lg px-3 py-2">
                   <img
-                    src="/images/graph0.svg"
+                    src={getImagePath("/images/graph0.svg")}
                     alt="Graph icon"
                     width={32}
                     height={32}
@@ -132,7 +133,7 @@ const ComparisonSection: React.FC = () => {
                 {/* Card Image */}
                 <div className="man-getting-financial-growth w-full max-w-[213px] h-[120px] sm:h-[160px] flex items-center justify-center overflow-hidden rounded-lg">
                   <img
-                    src="/images/clip-path-group0.svg"
+                    src={getImagePath("/images/clip-path-group0.svg")}
                     alt="Man getting financial growth"
                     className="w-full h-full object-contain"
                   />

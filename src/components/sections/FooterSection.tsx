@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useTranslation } from '@/hooks/useTranslation';
+import { getImagePath } from '@/utils/imagePath';
 
 const FooterSection: React.FC = () => {
   const t = useTranslation();
@@ -13,7 +14,7 @@ const FooterSection: React.FC = () => {
       <div className="flex flex-col gap-4 sm:gap-6 items-start w-full lg:w-auto">
         {/* Logo */}
         <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center px-1">
-          <Image src="/images/group-4273188750.svg"
+          <Image src={getImagePath("/images/group-4273188750.svg")}
             alt="HashDam Logo"
             width={33.5}
             height={38.68}
@@ -68,21 +69,21 @@ const FooterSection: React.FC = () => {
 
         {/* App Store Badge */}
         <a href="#" className="w-[120px] sm:w-[135px] h-9 sm:h-10 relative overflow-hidden hover:opacity-80 transition-opacity">
-          <Image src="/images/bg0.svg"
+          <Image src={getImagePath("/images/bg0.svg")}
             alt="App Store Background"
             width={135}
             height={40}
             className="absolute inset-0 w-full h-full object-cover"
             unoptimized
           />
-          <Image src="/images/group0_01.svg"
+          <Image src={getImagePath("/images/group0_01.svg")}
             alt="App Store Icon"
             width={18}
             height={22}
             className="absolute left-[10px] sm:left-[12px] top-[7px] sm:top-[9px] w-4 sm:w-[18px] h-5 sm:h-[22px]"
             unoptimized
           />
-          <Image src="/images/text0.svg"
+          <Image src={getImagePath("/images/text0.svg")}
             alt="App Store Text"
             width={75}
             height={25}
@@ -93,21 +94,21 @@ const FooterSection: React.FC = () => {
 
         {/* Google Play Badge */}
         <a href="#" className="w-[120px] sm:w-[135px] h-9 sm:h-10 relative overflow-hidden hover:opacity-80 transition-opacity">
-          <Image src="/images/bg1.svg"
+          <Image src={getImagePath("/images/bg1.svg")}
             alt="Google Play Background"
             width={135}
             height={40}
             className="absolute inset-0 w-full h-full object-cover"
             unoptimized
           />
-          <Image src="/images/google-play-logo0.svg"
+          <Image src={getImagePath("/images/google-play-logo0.svg")}
             alt="Google Play Logo"
             width={23}
             height={26}
             className="absolute left-[8px] sm:left-[10px] top-[5px] sm:top-[7px] w-5 sm:w-[23px] h-6 sm:h-[26px]"
             unoptimized
           />
-          <Image src="/images/text1.svg"
+          <Image src={getImagePath("/images/text1.svg")}
             alt="Google Play Text"
             width={85}
             height={27}

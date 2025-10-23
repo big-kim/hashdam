@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { staggerContainer, staggerItem } from '@/lib/animations';
 import { useTranslation } from '@/hooks/useTranslation';
+import { getImagePath } from '@/utils/imagePath';
 
 const ASICSection: React.FC = () => {
   const t = useTranslation();
@@ -60,7 +61,7 @@ const ASICSection: React.FC = () => {
               <div className="image-section flex items-center justify-center h-40 sm:h-48 mb-6 sm:mb-8 flex-shrink-0">
                 <img 
                   className="w-full max-w-[200px] sm:max-w-[240px] h-auto object-contain" 
-                  src="/images/group0.svg" 
+                  src={getImagePath("/images/group0.svg")} 
                   alt="ASIC & Hashpower"
                 />
               </div>
@@ -92,18 +93,18 @@ const ASICSection: React.FC = () => {
               <div className="image-section flex items-center justify-center h-40 sm:h-48 mb-6 sm:mb-8 flex-shrink-0">
                 <div className="flex flex-col gap-3 sm:gap-4 items-center justify-center w-full max-w-[280px]">
                   <div className="flex flex-row items-end justify-between w-full">
-                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src="/images/image-390.png" alt="Coin 1" />
+                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src={getImagePath("/images/image-390.png")} alt="Coin 1" />
                     <div className="relative">
-                      <img className="w-8 h-8 sm:w-10 sm:h-10" src="/images/layer-20.svg" alt="Dogecoin" />
+                      <img className="w-8 h-8 sm:w-10 sm:h-10" src={getImagePath("/images/layer-20.svg")} alt="Dogecoin" />
                     </div>
-                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src="/images/image-400.png" alt="Coin 2" />
-                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src="/images/image-410.png" alt="Coin 3" />
+                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src={getImagePath("/images/image-400.png")} alt="Coin 2" />
+                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src={getImagePath("/images/image-410.png")} alt="Coin 3" />
                   </div>
                   <div className="flex flex-row items-center justify-between w-full">
-                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src="/images/image-430.png" alt="Coin 4" />
-                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src="/images/image-440.png" alt="Coin 5" />
-                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src="/images/image-420.png" alt="Coin 6" />
-                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src="/images/image-450.png" alt="Coin 7" />
+                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src={getImagePath("/images/image-430.png")} alt="Coin 4" />
+                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src={getImagePath("/images/image-440.png")} alt="Coin 5" />
+                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src={getImagePath("/images/image-420.png")} alt="Coin 6" />
+                    <img className="w-8 h-8 sm:w-10 sm:h-10 object-cover" src={getImagePath("/images/image-450.png")} alt="Coin 7" />
                   </div>
                 </div>
               </div>
@@ -135,7 +136,7 @@ const ASICSection: React.FC = () => {
               <div className="image-section flex items-center justify-center h-40 sm:h-48 mb-6 sm:mb-8 flex-shrink-0">
                 <img 
                   className="w-full max-w-[200px] sm:max-w-[240px] h-auto object-contain" 
-                  src="/images/graphic-card0.svg" 
+                  src={getImagePath("/images/graphic-card0.svg")} 
                   alt="Hashpower Reward"
                 />
               </div>
