@@ -8,7 +8,7 @@ import { getImagePath } from '@/utils/imagePath';
 
 const LogoCloudsSection: React.FC = () => {
   return (
-    <section className="logo-clouds-section bg-white py-3 sm:py-4 md:py-6">
+    <section className="logo-clouds-section bg-white pt-8 pb-6 sm:pt-12 sm:pb-8 md:pt-16 md:pb-10 lg:pt-20 lg:pb-12 xl:pt-24">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-28">
         <motion.div 
           className="container flex flex-col gap-4 sm:gap-5 md:gap-6 items-center justify-start w-full overflow-hidden"

@@ -82,17 +82,52 @@ const Navigation: React.FC<NavigationProps> = ({
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    if (onSectionClick) {
-      onSectionClick(sectionId);
-    } else {
-      // Navigate to homepage with section anchor
-      router.push(`/#${sectionId}`);
+    try {
+      if (onSectionClick) {
+        onSectionClick(sectionId);
+      } else {
+        // Check if we're already on the homepage
+        const currentPath = window.location.pathname;
+        if (currentPath === '/' || currentPath === '') {
+          // If on homepage, just scroll to section
+          const element = document.getElementById(sectionId);
+          if (element) {
+            const offsetTop = element.offsetTop - 80; // Account for fixed header
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        } else {
+          // If not on homepage, navigate to homepage with section anchor
+          // Use replace instead of push to avoid unnecessary history entries
+          router.replace(`/#${sectionId}`);
+        }
+      }
+    } catch (error) {
+      console.warn('Navigation error:', error);
+      // Fallback to direct scroll if available
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } finally {
+      setMobileMenuOpen(false);
     }
-    setMobileMenuOpen(false);
   };
 
   const navigateToHome = () => {
-    router.push('/');
+    const currentPath = window.location.pathname;
+    if (currentPath === '/' || currentPath === '') {
+      // If already on homepage, scroll to top
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    } else {
+      // Navigate to homepage
+      router.push('/');
+    }
   };
 
   return (

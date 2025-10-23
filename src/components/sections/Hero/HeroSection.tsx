@@ -76,7 +76,7 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="hero-section relative w-full min-h-[90vh] bg-white overflow-hidden pt-16 lg:pt-20 pb-6 sm:pb-8 lg:pb-0">
+    <section className="hero-section relative w-full min-h-[100vh] lg:min-h-[100vh] bg-white overflow-hidden pt-16 lg:pt-20 pb-20 sm:pb-24 md:pb-32 lg:pb-48 xl:pb-56">
       {/* Background */}
       <div className="absolute inset-0 w-full h-full">
         <Image

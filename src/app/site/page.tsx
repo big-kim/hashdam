@@ -25,7 +25,7 @@ const MiningSitePage = () => {
     // 클라이언트 사이드에서만 실행
     if (typeof window === 'undefined') return;
     
-    // Navigate to homepage with section anchor
+    // Always navigate to homepage with section anchor from site page
     router.push(`/#${sectionId}`);
     setMobileMenuOpen(false); // Close mobile menu after click
   };
