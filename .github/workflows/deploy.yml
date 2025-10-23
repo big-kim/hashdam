@@ -35,14 +35,21 @@ jobs:
         env:
           NODE_ENV: production
       
-      - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
-      
-      - name: Fix image paths for GitHub Pages
+      - name: Verify build output
         run: |
           echo "Checking build output..."
-          ls -la ./out/
-          echo "Build completed successfully"
+          if [ -d "./out" ]; then
+            ls -la ./out/
+            echo "Build completed successfully"
+            if [ -f "./out/.nojekyll" ]; then
+              echo ".nojekyll file found in output"
+            else
+              echo "Warning: .nojekyll file not found in output"
+            fi
+          else
+            echo "Error: ./out directory not found after build"
+            exit 1
+          fi
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
