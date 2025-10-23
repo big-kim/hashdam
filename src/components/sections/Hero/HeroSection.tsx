@@ -80,7 +80,7 @@ const HeroSection: React.FC = () => {
       {/* Background */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src={getImagePath("/images/background.png")}
+          src={getImagePath("/images/Background.png")}
           alt="Hero background"
           width={1440}
           height={866}

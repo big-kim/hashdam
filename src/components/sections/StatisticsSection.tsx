@@ -22,7 +22,7 @@ const StatisticsSection: React.FC = () => {
       label: t.statistics.stats.miner
     },
     {
-      icon: getImagePath('/images/group0.svg'),
+      icon: getImagePath('/images/asic/group0.svg'),
       number: '305,300+',
       label: t.statistics.stats.totalHashpower
     },
