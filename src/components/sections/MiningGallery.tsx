@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useState } from 'react'
 import { useTranslation } from '@/hooks/useTranslation'
+import { getImagePath } from '@/utils/imagePath'
 
 interface GalleryLocation {
   name: string
@@ -14,28 +15,28 @@ const galleryData: GalleryLocation[] = [
   {
     name: 'Sibu',
     images: [
-      '/images/gallery/photo-10.png',
-      '/images/gallery/photo-11.png',
-      '/images/gallery/photo-12.png',
-      '/images/gallery/photo-13.png'
+      getImagePath('/images/gallery/photo-10.png'),
+      getImagePath('/images/gallery/photo-11.png'),
+      getImagePath('/images/gallery/photo-12.png'),
+      getImagePath('/images/gallery/photo-13.png')
     ]
   },
   {
     name: 'Miri',
     images: [
-      '/images/gallery/photo-14.png',
-      '/images/gallery/photo-15.png',
-      '/images/gallery/photo-16.png',
-      '/images/gallery/photo-17.png'
+      getImagePath('/images/gallery/photo-14.png'),
+      getImagePath('/images/gallery/photo-15.png'),
+      getImagePath('/images/gallery/photo-16.png'),
+      getImagePath('/images/gallery/photo-17.png')
     ]
   },
   {
     name: 'A/S센터',
     images: [
-      '/images/gallery/photo-18.png',
-      '/images/gallery/photo-19.png',
-      '/images/gallery/photo-110.png',
-      '/images/gallery/photo-111.png'
+      getImagePath('/images/gallery/photo-18.png'),
+      getImagePath('/images/gallery/photo-19.png'),
+      getImagePath('/images/gallery/photo-110.png'),
+      getImagePath('/images/gallery/photo-111.png')
     ]
   }
 ]

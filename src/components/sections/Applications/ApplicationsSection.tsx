@@ -6,6 +6,7 @@ import { fadeInUp, staggerContainer, staggerItem } from '@/lib/animations'
 import Image from 'next/image'
 import FlipCard from '@/components/ui/FlipCard/FlipCard'
 import { useTranslation } from '@/hooks/useTranslation'
+import { getImagePath } from '@/utils/imagePath'
 
 const ApplicationsSection = () => {
   const t = useTranslation();
@@ -18,7 +19,7 @@ const ApplicationsSection = () => {
   const applications = [
     {
       id: 1,
-      image: '/images/applications/frame-11712759796.png',
+      image: getImagePath('/images/applications/frame-11712759796.png'),
       title: t.applications.items.ecommerce.title,
       description: t.applications.items.ecommerce.description,
       gradient: 'from-amber-500/20 to-orange-500/20',
@@ -27,7 +28,7 @@ const ApplicationsSection = () => {
     },
     {
       id: 2,
-      image: '/images/applications/frame-11712759790.png',
+      image: getImagePath('/images/applications/frame-11712759790.png'),
       title: t.applications.items.nftGaming.title,
       description: t.applications.items.nftGaming.description,
       gradient: 'from-purple-500/20 to-pink-500/20',
@@ -36,7 +37,7 @@ const ApplicationsSection = () => {
     },
     {
       id: 3,
-      image: '/images/applications/frame-11712759791.png',
+      image: getImagePath('/images/applications/frame-11712759791.png'),
       title: t.applications.items.education.title,
       description: t.applications.items.education.description,
       gradient: 'from-orange-500/20 to-red-500/20',
@@ -45,7 +46,7 @@ const ApplicationsSection = () => {
     },
     {
       id: 4,
-      image: '/images/applications/frame-11712759792.png',
+      image: getImagePath('/images/applications/frame-11712759792.png'),
       title: t.applications.items.healthcare.title,
       description: t.applications.items.healthcare.description,
       gradient: 'from-green-500/20 to-emerald-500/20',
@@ -54,7 +55,7 @@ const ApplicationsSection = () => {
     },
     {
       id: 5,
-      image: '/images/applications/frame-11712759793.png',
+      image: getImagePath('/images/applications/frame-11712759793.png'),
       title: t.applications.items.finance.title,
       description: t.applications.items.finance.description,
       gradient: 'from-blue-500/20 to-cyan-500/20',
@@ -63,7 +64,7 @@ const ApplicationsSection = () => {
     },
     {
       id: 6,
-      image: '/images/applications/frame-11712759794.png',
+      image: getImagePath('/images/applications/frame-11712759794.png'),
       title: t.applications.items.travel.title,
       description: t.applications.items.travel.description,
       gradient: 'from-rose-500/20 to-pink-500/20',
@@ -72,7 +73,7 @@ const ApplicationsSection = () => {
     },
     {
       id: 7,
-      image: '/images/applications/frame-11712759795.png',
+      image: getImagePath('/images/applications/frame-11712759795.png'),
       title: t.applications.items.social.title,
       description: t.applications.items.social.description,
       gradient: 'from-emerald-500/20 to-teal-500/20',
@@ -81,7 +82,7 @@ const ApplicationsSection = () => {
     },
     {
       id: 8,
-      image: '/images/applications/frame-11712759797.png',
+      image: getImagePath('/images/applications/frame-11712759797.png'),
       title: t.applications.items.mobility.title,
       description: t.applications.items.mobility.description,
       gradient: 'from-teal-500/20 to-cyan-500/20',
@@ -90,7 +91,7 @@ const ApplicationsSection = () => {
     },
     {
       id: 9,
-      image: '/images/applications/frame-11712759798.png',
+      image: getImagePath('/images/applications/frame-11712759798.png'),
       title: t.applications.items.entertainment.title,
       description: t.applications.items.entertainment.description,
       gradient: 'from-indigo-500/20 to-purple-500/20',

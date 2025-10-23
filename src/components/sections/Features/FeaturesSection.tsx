@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { fadeInUp, staggerContainer, staggerItem } from '@/lib/animations'
 import Image from 'next/image'
 import { useTranslation } from '@/hooks/useTranslation'
+import { getImagePath } from '@/utils/imagePath'
 
 // Features data will be retrieved from translations
 
@@ -38,55 +39,55 @@ const FeaturesSection = () => {
     {
       id: 1,
       title: t.features.items.growth.title,
-      image: '/images/growth-10.svg',
+      image: getImagePath('/images/growth-10.svg'),
       description: t.features.items.growth.description
     },
     {
       id: 2,
       title: t.features.items.multiCoin.title,
-      image: '/images/multi-coin-10.svg',
+      image: getImagePath('/images/multi-coin-10.svg'),
       description: t.features.items.multiCoin.description
     },
     {
       id: 3,
       title: t.features.items.realAsset.title,
-      image: '/images/real-asset-10.svg',
+      image: getImagePath('/images/real-asset-10.svg'),
       description: t.features.items.realAsset.description
     },
     {
       id: 4,
       title: t.features.items.continuousValue.title,
-      image: '/images/continuous-value-10.svg',
+      image: getImagePath('/images/continuous-value-10.svg'),
       description: t.features.items.continuousValue.description
     },
     {
       id: 5,
       title: t.features.items.transparentData.title,
-      image: '/images/transparent-data0.svg',
+      image: getImagePath('/images/transparent-data0.svg'),
       description: t.features.items.transparentData.description
     },
     {
       id: 6,
       title: t.features.items.costEffective.title,
-      image: '/images/cost-effective0.svg',
+      image: getImagePath('/images/cost-effective0.svg'),
       description: t.features.items.costEffective.description
     },
     {
       id: 7,
       title: t.features.items.expandable.title,
-      image: '/images/expandable0.svg',
+      image: getImagePath('/images/expandable0.svg'),
       description: t.features.items.expandable.description
     },
     {
       id: 8,
       title: t.features.items.differentiatedExperience.title,
-      image: '/images/differentiated-experience0.svg',
+      image: getImagePath('/images/differentiated-experience0.svg'),
       description: t.features.items.differentiatedExperience.description
     },
     {
       id: 9,
       title: t.features.items.globalCompatibility.title,
-      image: '/images/global-compatibility0.svg',
+      image: getImagePath('/images/global-compatibility0.svg'),
       description: t.features.items.globalCompatibility.description
     }
   ];

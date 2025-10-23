@@ -10,6 +10,7 @@ import { RippleEffect } from '@/components/ui/RippleEffect';
 import LanguageButton from '@/components/ui/LanguageButton';
 import { useTranslation } from '@/hooks/useTranslation';
 import { menuItemHover, menuItemTap } from '@/lib/animations';
+import { getImagePath } from '@/utils/imagePath';
 
 interface NavigationProps {
   activeSection?: string;
@@ -128,7 +129,7 @@ const Navigation: React.FC<NavigationProps> = ({
           >
             <div className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 flex items-center justify-center">
               <Image
-                src="/images/group-4273188750.svg"
+                src={getImagePath("/images/group-4273188750.svg")}
                 alt="HashDam Icon"
                 width={28}
                 height={32}
@@ -138,7 +139,7 @@ const Navigation: React.FC<NavigationProps> = ({
             </div>
             <div className="logo flex items-center justify-center h-8 sm:h-9 lg:h-10">
               <Image
-                src="/images/hash-dam0.svg"
+                src={getImagePath("/images/hash-dam0.svg")}
                 alt="HashDam"
                 width={136}
                 height={16}

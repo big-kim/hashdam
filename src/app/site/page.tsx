@@ -10,6 +10,7 @@ import { CTASection, FooterSection } from '@/components/sections'
 import { Button, RippleEffect, TypingEffect } from '@/components/ui'
 import { useTranslation } from '@/hooks/useTranslation'
 import MiningGallery from '@/components/sections/MiningGallery'
+import { getImagePath } from '@/utils/imagePath'
 
 
 const MiningSitePage = () => {
@@ -106,7 +107,7 @@ const MiningSitePage = () => {
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
             >
               <div className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 flex items-center justify-center">
-                <Image src="/images/group-4273188750.svg"
+                <Image src={getImagePath("/images/group-4273188750.svg")}
                   alt="HashDam Icon"
                   width={28}
                   height={32}
@@ -115,7 +116,7 @@ const MiningSitePage = () => {
                 />
               </div>
               <div className="logo flex items-center justify-center h-8 sm:h-9 lg:h-10">
-                <Image src="/images/hash-dam0.svg"
+                <Image src={getImagePath("/images/hash-dam0.svg")}
                   alt="HashDam"
                   width={136}
                   height={16}
@@ -453,7 +454,7 @@ const MiningSitePage = () => {
           {/* Sky Blue Blur Effect - Enhanced */}
           <div className="absolute top-0 right-0 w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] bg-gradient-to-bl from-[#5DADE2] via-[#5DADE2]/60 to-transparent rounded-full blur-3xl opacity-50"></div>
           {/* Background SVG */}
-          <Image src="/images/mining-site/bg0.svg"
+          <Image src={getImagePath("/images/mining-site/bg0.svg")}
             alt="Background"
             width={1440}
             height={752}
@@ -502,7 +503,7 @@ const MiningSitePage = () => {
                 </h3>
                 <div className="bg-[#fafafa] rounded-[16px] border border-[#a9a9a9] p-[12px] flex items-center justify-center w-[192px] h-[144px] shadow-[2px_2px_2px_0px_rgba(0,0,0,0.25)]">
                    <Image
-                     src="/images/mining-site/bityou-logo-20.png"
+                     src={getImagePath("/images/mining-site/bityou-logo-20.png")}
                      alt="BITYOU Logo"
                      width={151}
                      height={32}
@@ -528,7 +529,7 @@ const MiningSitePage = () => {
                 <div className="bg-[#fafafa] rounded-[16px] border border-[#a9a9a9] p-[12px] flex items-center justify-center w-[192px] h-[144px] shadow-[2px_2px_2px_0px_rgba(0,0,0,0.25)]">
                    <div className="flex items-center gap-[5px]">
                      <div className="flex items-center justify-center w-[32px] h-[32px] p-[2px]">
-                       <Image src="/images/mining-site/group-4273188750.svg"
+                       <Image src={getImagePath("/images/mining-site/group-4273188750.svg")}
                          alt="HashDam Icon"
                          width={26.6}
                          height={30.4}
@@ -537,7 +538,7 @@ const MiningSitePage = () => {
                        />
                      </div>
                      <div className="rounded-[4px] p-[4px] flex items-center justify-center h-[32px]">
-                       <Image src="/images/mining-site/hash-dam1.svg"
+                       <Image src={getImagePath("/images/mining-site/hash-dam1.svg")}
                          alt="HashDam Logo"
                          width={124.3}
                          height={14.4}
@@ -566,7 +567,7 @@ const MiningSitePage = () => {
                 <div className="bg-[#fafafa] rounded-[16px] border border-[#a9a9a9] p-[12px] flex items-center justify-center w-[192px] h-[144px] shadow-[2px_2px_2px_0px_rgba(0,0,0,0.25)]">
                    <div className="relative w-[142px] h-[142px] flex items-center justify-center">
                      <Image
-                       src="/images/mining-site/whats-app-2025-07-02-19-45-08-44249603-10.png"
+                       src={getImagePath("/images/mining-site/whats-app-2025-07-02-19-45-08-44249603-10.png")}
                        alt="MCOM Logo"
                        width={120}
                        height={120}
@@ -621,7 +622,7 @@ const MiningSitePage = () => {
               variants={staggerItem}
             >
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Image src="/images/mining-site/book-fill0.svg"
+                <Image src={getImagePath("/images/mining-site/book-fill0.svg")}
                   alt="License"
                   width={32}
                   height={32}
@@ -636,7 +637,7 @@ const MiningSitePage = () => {
               variants={staggerItem}
             >
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Image src="/images/mining-site/atom-fill0.svg"
+                <Image src={getImagePath("/images/mining-site/atom-fill0.svg")}
                   alt="Environment"
                   width={32}
                   height={32}
@@ -651,7 +652,7 @@ const MiningSitePage = () => {
               variants={staggerItem}
             >
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Image src="/images/mining-site/dimond-alt-fill0.svg"
+                <Image src={getImagePath("/images/mining-site/dimond-alt-fill0.svg")}
                   alt="Compliance"
                   width={32}
                   height={32}
@@ -666,7 +667,7 @@ const MiningSitePage = () => {
               variants={staggerItem}
             >
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Image src="/images/mining-site/book-fill4.svg"
+                <Image src={getImagePath("/images/mining-site/book-fill4.svg")}
                   alt="Transparency"
                   width={32}
                   height={32}
