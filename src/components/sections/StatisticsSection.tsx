@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { useTranslation } from '@/hooks/useTranslation';
+import { getImagePath } from '@/utils/imagePath';
 
 interface StatisticItem {
   icon: string;
@@ -16,22 +17,22 @@ const StatisticsSection: React.FC = () => {
 
   const statisticsData: StatisticItem[] = [
     {
-      icon: '/images/base-feature-icon0.svg',
+      icon: getImagePath('/images/base-feature-icon0.svg'),
       number: '24+',
       label: t.statistics.stats.miner
     },
     {
-      icon: '/images/group0.svg',
+      icon: getImagePath('/images/group0.svg'),
       number: '305,300+',
       label: t.statistics.stats.totalHashpower
     },
     {
-      icon: '/images/group1.svg',
+      icon: getImagePath('/images/group1.svg'),
       number: '205,123+',
       label: t.statistics.stats.distributedHashpower
     },
     {
-      icon: '/images/group2.svg',
+      icon: getImagePath('/images/group2.svg'),
       number: '560+',
       label: t.statistics.stats.users
     }

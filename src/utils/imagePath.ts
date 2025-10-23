@@ -6,7 +6,7 @@
 /**
  * 환경에 따라 적절한 이미지 경로를 반환합니다.
  * 개발 환경: '/images/...' 그대로 사용
- * 프로덕션 환경: Next.js의 basePath 설정을 따름
+ * 프로덕션 환경: basePath를 명시적으로 추가
  * 
  * @param path - 이미지 경로 (예: '/images/logo.png' 또는 'images/logo.png')
  * @returns 환경에 맞는 완전한 이미지 경로
@@ -20,8 +20,20 @@ export const getImagePath = (path: string): string => {
   // 경로가 '/'로 시작하지 않으면 추가
   const normalizedPath = path.startsWith('/') ? path : `/${path}`;
   
-  // Next.js의 basePath 설정을 사용 (next.config.js에서 설정됨)
-  // 개발 환경에서는 basePath가 없고, 프로덕션에서는 '/hashdam'이 자동으로 추가됨
+  // 이미 basePath가 포함되어 있는지 확인
+  if (normalizedPath.startsWith('/hashdam/')) {
+    return normalizedPath;
+  }
+  
+  // 프로덕션 환경에서 basePath 추가
+  // process.env.NODE_ENV는 빌드 타임에 결정됨
+  if (process.env.NODE_ENV === 'production') {
+    // GITHUB_REPOSITORY 환경 변수가 있으면 사용, 없으면 'hashdam' 사용
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/hashdam';
+    return `${basePath}${normalizedPath}`;
+  }
+  
+  // 개발 환경에서는 basePath 없이 그대로 사용
   return normalizedPath;
 };
 
