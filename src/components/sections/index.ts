@@ -1,4 +1,4 @@
-export { HeroSection } from './Hero';
+export { HeroSection } from './hero';
 export { LogoCloudsSection } from './LogoClouds';
 export { ComparisonSection } from './Comparison';
 export { ASICSection } from './ASIC';
