@@ -1,0 +1,38 @@
+User-Agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+User-Agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-Agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-Agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-Agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-Agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-Agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+User-Agent: SemrushBot
+User-Agent: AhrefsBot
+User-Agent: MJ12bot
+Disallow: /
+
+Host: https://hashdam.io
+Sitemap: https://hashdam.io/sitemap.xml
