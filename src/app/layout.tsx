@@ -29,11 +29,11 @@ const notoSansKR = Noto_Sans_KR({
 export const metadata: Metadata = {
   metadataBase: new URL('https://hashdam.io'),
   title: {
-    default: 'HashDam - 클라우드 마이닝 플랫폼 | 비트코인 채굴 서비스',
+    default: '해시파워 기반의 새로운 지속 성장형 리워드 플랫폼 - HashDam',
     template: '%s | HashDam'
   },
-  description: 'HashDam은 안전하고 효율적인 클라우드 마이닝 플랫폼입니다. 비트코인, 이더리움 등 다양한 암호화폐 채굴 서비스를 제공합니다.',
-  keywords: ['클라우드 마이닝', '비트코인 채굴', '암호화폐', 'HashDam', '해시댐', '마이닝 플랫폼', '해시파워', '암호화폐 리워드', '채굴 보상', 'B2B 리워드', 'API 통합', 'LTC', 'DOGE', '머지마이닝'],
+  description: 'HashDam은 해시를 충전하면 매일 코인을 리워드 받는 차세대 리워드입니다. Api로 서비스에 쉽게 붙이고, 데이터는 투명하게 검증됩니다.',
+  keywords: ['해시파워', '리워드 플랫폼', '암호화폐', 'HashDam', '해시댐', '마이닝 플랫폼', '지속 성장형 리워드', '암호화폐 리워드', '채굴 보상', 'B2B 리워드', 'API 통합', 'LTC', 'DOGE', '머지마이닝'],
   authors: [{ name: 'HashDam Team', url: 'https://hashdam.io' }],
   creator: 'HashDam',
   publisher: 'HashDam',
@@ -60,14 +60,14 @@ export const metadata: Metadata = {
     locale: 'ko_KR',
     url: 'https://hashdam.io/',
     siteName: 'HashDam',
-    title: 'HashDam - 클라우드 마이닝 플랫폼 | 비트코인 채굴 서비스',
-    description: 'HashDam은 안전하고 효율적인 클라우드 마이닝 플랫폼입니다. 비트코인, 이더리움 등 다양한 암호화폐 채굴 서비스를 제공합니다.',
+    title: '해시파워 기반의 새로운 지속 성장형 리워드 플랫폼 - HashDam',
+    description: 'HashDam은 해시를 충전하면 매일 코인을 리워드 받는 차세대 리워드입니다. Api로 서비스에 쉽게 붙이고, 데이터는 투명하게 검증됩니다.',
     images: [
       {
-        url: '/images/og-image-1200x630.jpg',
+        url: '/images/hash-dam0.svg',
         width: 1200,
         height: 630,
-        alt: 'HashDam - 클라우드 마이닝 플랫폼',
+        alt: 'HashDam - 해시파워 기반의 지속 성장형 리워드 플랫폼',
       },
     ],
     countryName: 'South Korea',
@@ -78,11 +78,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@HashDam_io',
     creator: '@HashDam_io',
-    title: 'HashDam - 클라우드 마이닝 플랫폼 | 비트코인 채굴 서비스',
-    description: 'HashDam은 안전하고 효율적인 클라우드 마이닝 플랫폼입니다. 비트코인, 이더리움 등 다양한 암호화폐 채굴 서비스를 제공합니다.',
+    title: '해시파워 기반의 새로운 지속 성장형 리워드 플랫폼 - HashDam',
+    description: 'HashDam은 해시를 충전하면 매일 코인을 리워드 받는 차세대 리워드입니다. Api로 서비스에 쉽게 붙이고, 데이터는 투명하게 검증됩니다.',
     images: {
-      url: '/images/twitter-image-1200x600.jpg',
-      alt: 'HashDam - 클라우드 마이닝 플랫폼',
+      url: '/images/hash-dam0.svg',
+      alt: 'HashDam - 해시파워 기반의 지속 성장형 리워드 플랫폼',
     },
   },
   alternates: {
@@ -123,6 +123,11 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/site.webmanifest" />
         
+        {/* Favicon Settings */}
+        <link rel="icon" type="image/svg+xml" href="/images/group-4273188750.svg" />
+        <link rel="apple-touch-icon" href="/images/group-4273188750.svg" />
+        <link rel="shortcut icon" href="/images/group-4273188750.svg" />
+        
         {/* Font Preloads for LCP optimization */}
         <link
           rel="preload"
@@ -161,7 +166,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "HashDam",
               "url": "https://hashdam.io",
-              "logo": "https://hashdam.io/images/logo.png",
+              "logo": "https://hashdam.io/images/hash-dam0.svg",
               "description": "해시파워 기반의 지속 성장형 리워드 플랫폼",
               "foundingDate": "2024",
               "address": {

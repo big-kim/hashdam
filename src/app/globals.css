@@ -135,7 +135,8 @@
   --shadow-2xl: -5px 4.5px 8px -2px hsl(0 0% 0% / 0.58);
 }
 
-@theme inline {
+/* Tailwind CSS variable mappings */
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

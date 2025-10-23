@@ -76,6 +76,31 @@ const nextConfig = {
     forceSwcTransforms: true,
   },
   
+  // 개발 서버 설정
+  async headers() {
+    return [
+      {
+        source: '/@vite/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'no-store',
+          },
+        ],
+      },
+    ];
+  },
+  
+  async rewrites() {
+    return [
+      // Vite 관련 요청을 빈 응답으로 처리
+      {
+        source: '/@vite/:path*',
+        destination: '/api/vite-fallback',
+      },
+    ];
+  },
+  
   // 개발 서버 안정성
   onDemandEntries: {
     maxInactiveAge: 25 * 1000,
