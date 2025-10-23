@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     description: 'HashDam은 해시를 충전하면 매일 코인을 리워드 받는 차세대 리워드입니다. Api로 서비스에 쉽게 붙이고, 데이터는 투명하게 검증됩니다.',
     images: [
       {
-        url: '/images/hash-dam0.svg',
+        url: '/images/social-preview.png',
         width: 1200,
         height: 630,
         alt: 'HashDam - 해시파워 기반의 지속 성장형 리워드 플랫폼',
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     title: '해시파워 기반의 새로운 지속 성장형 리워드 플랫폼 - HashDam',
     description: 'HashDam은 해시를 충전하면 매일 코인을 리워드 받는 차세대 리워드입니다. Api로 서비스에 쉽게 붙이고, 데이터는 투명하게 검증됩니다.',
     images: {
-      url: '/images/hash-dam0.svg',
+      url: '/images/social-preview.png',
       alt: 'HashDam - 해시파워 기반의 지속 성장형 리워드 플랫폼',
     },
   },
@@ -124,9 +124,9 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* Favicon Settings */}
-        <link rel="icon" type="image/svg+xml" href="/images/group-4273188750.svg" />
-        <link rel="apple-touch-icon" href="/images/group-4273188750.svg" />
-        <link rel="shortcut icon" href="/images/group-4273188750.svg" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <link rel="apple-touch-icon" href="/images/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         
         {/* Font Preloads for LCP optimization */}
         <link
@@ -166,7 +166,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "HashDam",
               "url": "https://hashdam.io",
-              "logo": "https://hashdam.io/images/hash-dam0.svg",
+              "logo": "https://hashdam.io/images/Logo.png",
               "description": "해시파워 기반의 지속 성장형 리워드 플랫폼",
               "foundingDate": "2024",
               "address": {
