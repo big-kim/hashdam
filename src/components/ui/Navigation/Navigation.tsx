@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import { Button } from '@/components/ui/Button/Button';
+import { Button } from '@/components/ui/Button';
 import { RippleEffect } from '@/components/ui/RippleEffect';
 import LanguageButton from '@/components/ui/LanguageButton';
 import { useTranslation } from '@/hooks/useTranslation';

@@ -399,6 +399,9 @@ export interface Translations {
       dailyReward: string;
       apiIntegration: string;
       settlementReport: string;
+      dailyRewardValue: string;
+      apiIntegrationValue: string;
+      settlementReportValue: string;
     };
   };
 
@@ -480,7 +483,7 @@ export interface Translations {
   };
 }
 
-export const translations: Record<'ko' | 'en' | 'ja' | 'zh' | 'es' | 'fr', Translations> = {
+export const translations: Record<'ko' | 'en' | 'ja', Translations> = {
   ko: {
     nav: {
       about: '소개',
@@ -1517,6 +1520,11 @@ export const translations: Record<'ko' | 'en' | 'ja' | 'zh' | 'es' | 'fr', Trans
       coinList: 'コイン: LTC / DOGE / BELLS / LKY / PEP / JKC / DINGO / SHIC',
       packageInfo: '1年、2年、3年パッケージ / 電気・メンテナンス込み',
       transparencyInfo: '透明なデータ、ZKP検証ロードマップ',
+      comingSoon: {
+        title: 'まもなく公開',
+        message: 'この機能はまもなく公開されます。',
+        closeButton: '閉じる',
+      },
     },
     asic: {
       title: 'Hashdamとは？',
@@ -1851,6 +1859,9 @@ export const translations: Record<'ko' | 'en' | 'ja' | 'zh' | 'es' | 'fr', Trans
         dailyReward: '毎日の報酬',
         apiIntegration: 'API統合',
         settlementReport: '決済レポート',
+        dailyRewardValue: '24h',
+        apiIntegrationValue: '簡単',
+        settlementReportValue: '自動',
       },
     },
     statistics: {
