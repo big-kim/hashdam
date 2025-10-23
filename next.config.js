@@ -4,6 +4,8 @@ const nextConfig = {
   ...(process.env.NODE_ENV === 'production' && {
     output: 'export',
     trailingSlash: true,
+    basePath: '/hashdam',
+    assetPrefix: '/hashdam',
   }),
   images: {
     // 정적 export를 사용할 때는 이미지 최적화 비활성화
