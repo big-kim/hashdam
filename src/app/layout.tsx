@@ -27,10 +27,15 @@ const notoSansKR = Noto_Sans_KR({
 })
 
 const SITE_URL = 'https://big-kim.github.io/hashdam'
-const SOCIAL_IMAGE_PATH = '/images/social-preview.png'
+const SOCIAL_IMAGE_PATH = '/images/FullLogo.png'
 const SOCIAL_IMAGE_URL = `${SITE_URL}${SOCIAL_IMAGE_PATH}`
 const ICON_PATH = '/images/logo-hash.png'
 const ICON_URL = `${SITE_URL}${ICON_PATH}`
+
+// Relative paths for icons (works with basePath)
+// Note: For GitHub Pages with basePath, we need to include it in the path
+const RELATIVE_ICON_PATH = '/hashdam/images/logo-hash.png'
+const RELATIVE_SOCIAL_IMAGE_PATH = '/hashdam/images/FullLogo.png'
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${SITE_URL}/`),
@@ -47,13 +52,13 @@ export const metadata: Metadata = {
   manifest: `${SITE_URL}/site.webmanifest`,
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/images/logo-hash.png', sizes: '192x192', type: 'image/png' },
+      { url: RELATIVE_ICON_PATH, type: 'image/png' },
+      { url: RELATIVE_ICON_PATH, type: 'image/png', sizes: '144x144' },
     ],
     apple: [
-      { url: '/images/logo-hash.png', sizes: '192x192', type: 'image/png' },
+      { url: RELATIVE_ICON_PATH },
     ],
-    shortcut: '/favicon.ico',
+    shortcut: RELATIVE_ICON_PATH,
   },
   generator: 'Next.js',
   referrer: 'origin-when-cross-origin',
