@@ -46,9 +46,14 @@ export const metadata: Metadata = {
   applicationName: 'HashDam',
   manifest: `${SITE_URL}/site.webmanifest`,
   icons: {
-    icon: '/images/logo-hash.png',
-    apple: '/images/logo-hash.png',
-    shortcut: '/images/logo-hash.png',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/images/logo-hash.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/logo-hash.png', sizes: '192x192', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
   },
   generator: 'Next.js',
   referrer: 'origin-when-cross-origin',
