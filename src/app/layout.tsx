@@ -29,11 +29,11 @@ const notoSansKR = Noto_Sans_KR({
 export const metadata: Metadata = {
   metadataBase: new URL('https://hashdam.io'),
   title: {
-    default: '해시파워 기반의 새로운 지속 성장형 리워드 플랫폼 - HashDam',
+    default: '해시파워 기반의 새로운 지속 성장 리워드 플랫폼 - HashDam',
     template: '%s | HashDam'
   },
-  description: 'HashDam은 해시를 충전하면 매일 코인을 리워드 받는 차세대 리워드입니다. Api로 서비스에 쉽게 붙이고, 데이터는 투명하게 검증됩니다.',
-  keywords: ['해시파워', '리워드 플랫폼', '암호화폐', 'HashDam', '해시댐', '마이닝 플랫폼', '지속 성장형 리워드', '암호화폐 리워드', '채굴 보상', 'B2B 리워드', 'API 통합', 'LTC', 'DOGE', '머지마이닝'],
+  description: 'HashDam은 해시파워를 활용해 일일 코인 리워드를 제공하는 기업용 리워드 인프라입니다. API 연동으로 서비스에 쉽게 적용하고, 데이터는 투명하게 검증됩니다.',
+  keywords: ['해시파워 리워드', '고객 리워드 플랫폼', 'HashDam', '해시댐', 'B2B 리워드', 'API 연동', '코인 리워드', '지속가능 리워드', '멤버십 솔루션', '로열티 프로그램', '데이터 투명성'],
   authors: [{ name: 'HashDam Team', url: 'https://hashdam.io' }],
   creator: 'HashDam',
   publisher: 'HashDam',
@@ -60,14 +60,14 @@ export const metadata: Metadata = {
     locale: 'ko_KR',
     url: 'https://hashdam.io/',
     siteName: 'HashDam',
-    title: '해시파워 기반의 새로운 지속 성장형 리워드 플랫폼 - HashDam',
-    description: 'HashDam은 해시를 충전하면 매일 코인을 리워드 받는 차세대 리워드입니다. Api로 서비스에 쉽게 붙이고, 데이터는 투명하게 검증됩니다.',
+    title: '해시파워 기반의 새로운 지속 성장 리워드 플랫폼 - HashDam',
+    description: 'HashDam은 해시파워를 활용해 일일 코인 리워드를 제공하는 기업용 리워드 인프라입니다. API 연동으로 서비스에 쉽게 적용하고, 데이터는 투명하게 검증됩니다.',
     images: [
       {
         url: '/images/social-preview.png',
         width: 1200,
         height: 630,
-        alt: 'HashDam - 해시파워 기반의 지속 성장형 리워드 플랫폼',
+        alt: 'HashDam - 해시파워 기반 리워드 플랫폼',
       },
     ],
     countryName: 'South Korea',
@@ -78,11 +78,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@HashDam_io',
     creator: '@HashDam_io',
-    title: '해시파워 기반의 새로운 지속 성장형 리워드 플랫폼 - HashDam',
-    description: 'HashDam은 해시를 충전하면 매일 코인을 리워드 받는 차세대 리워드입니다. Api로 서비스에 쉽게 붙이고, 데이터는 투명하게 검증됩니다.',
+    title: '해시파워 기반의 새로운 지속 성장 리워드 플랫폼 - HashDam',
+    description: 'HashDam은 해시파워를 활용해 일일 코인 리워드를 제공하는 기업용 리워드 인프라입니다. API 연동으로 서비스에 쉽게 적용하고, 데이터는 투명하게 검증됩니다.',
     images: {
       url: '/images/social-preview.png',
-      alt: 'HashDam - 해시파워 기반의 지속 성장형 리워드 플랫폼',
+      alt: 'HashDam - 해시파워 기반 리워드 플랫폼',
     },
   },
   alternates: {
@@ -167,7 +167,7 @@ export default function RootLayout({
               "name": "HashDam",
               "url": "https://hashdam.io",
               "logo": "https://hashdam.io/images/Logo.png",
-              "description": "해시파워 기반의 지속 성장형 리워드 플랫폼",
+              "description": "HashDam은 해시파워를 활용해 일일 코인 리워드를 제공하는 기업용 리워드 인프라입니다. API 연동으로 서비스에 쉽게 적용하고, 데이터는 투명하게 검증됩니다.",
               "foundingDate": "2024",
               "address": {
                 "@type": "PostalAddress",
