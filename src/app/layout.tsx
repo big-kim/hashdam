@@ -64,10 +64,10 @@ export const metadata: Metadata = {
     description: 'HashDam은 해시파워를 활용해 일일 코인 리워드를 제공하는 기업용 리워드 인프라입니다. API 연동으로 서비스에 쉽게 적용하고, 데이터는 투명하게 검증됩니다.',
     images: [
       {
-        url: '/images/social-preview.png',
+        url: '/images/FullLogo.png',
         width: 1200,
         height: 630,
-        alt: 'HashDam - 해시파워 기반 리워드 플랫폼',
+        alt: 'HashDam - Full Logo',
       },
     ],
     countryName: 'South Korea',
@@ -81,8 +81,8 @@ export const metadata: Metadata = {
     title: '해시파워 기반의 새로운 지속 성장 리워드 플랫폼 - HashDam',
     description: 'HashDam은 해시파워를 활용해 일일 코인 리워드를 제공하는 기업용 리워드 인프라입니다. API 연동으로 서비스에 쉽게 적용하고, 데이터는 투명하게 검증됩니다.',
     images: {
-      url: '/images/social-preview.png',
-      alt: 'HashDam - 해시파워 기반 리워드 플랫폼',
+      url: '/images/FullLogo.png',
+      alt: 'HashDam - Full Logo',
     },
   },
   alternates: {
@@ -124,8 +124,8 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* Favicon Settings */}
-        <link rel="icon" type="image/png" href="/images/favicon.png" />
-        <link rel="apple-touch-icon" href="/images/favicon.png" />
+        <link rel="icon" type="image/png" href="/images/logo_#.png" />
+        <link rel="apple-touch-icon" href="/images/logo_#.png" />
         <link rel="shortcut icon" href="/favicon.ico" />
         
         {/* Font Preloads for LCP optimization */}
