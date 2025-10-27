@@ -26,9 +26,9 @@ const notoSansKR = Noto_Sans_KR({
   display: 'swap',
 })
 
-const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://big-kim.github.io/hashdam'
-const SITE_URL = rawSiteUrl.replace(/\/$/, '')
-const SOCIAL_IMAGE_URL = `${SITE_URL}/images/FullLogo.png`
+const SITE_URL = 'https://big-kim.github.io/hashdam'
+const SOCIAL_IMAGE_PATH = '/images/FullLogo.png'
+const SOCIAL_IMAGE_URL = `${SITE_URL}${SOCIAL_IMAGE_PATH}`
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${SITE_URL}/`),
@@ -42,6 +42,15 @@ export const metadata: Metadata = {
   creator: 'HashDam',
   publisher: 'HashDam',
   applicationName: 'HashDam',
+  icons: {
+    icon: [
+      { url: '/images/logo-hash.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/logo-hash.png' },
+    ],
+    shortcut: '/images/logo-hash.png',
+  },
   generator: 'Next.js',
   referrer: 'origin-when-cross-origin',
   robots: {
@@ -126,11 +135,6 @@ export default function RootLayout({
     <html lang="ko" className={`${inter.variable} ${poppins.variable} ${notoSansKR.variable}`}>
       <head>
         <link rel="manifest" href="/site.webmanifest" />
-        
-        {/* Favicon Settings */}
-        <link rel="icon" type="image/png" href="/images/logo_%23.png" />
-        <link rel="apple-touch-icon" href="/images/logo_%23.png" />
-        <link rel="shortcut icon" href="/favicon.ico" />
         
         {/* Font Preloads for LCP optimization */}
         <link
