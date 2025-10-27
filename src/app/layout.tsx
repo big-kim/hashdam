@@ -29,6 +29,8 @@ const notoSansKR = Noto_Sans_KR({
 const SITE_URL = 'https://big-kim.github.io/hashdam'
 const SOCIAL_IMAGE_PATH = '/images/FullLogo.png'
 const SOCIAL_IMAGE_URL = `${SITE_URL}${SOCIAL_IMAGE_PATH}`
+const ICON_PATH = '/images/logo-hash.png'
+const ICON_URL = `${SITE_URL}${ICON_PATH}`
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${SITE_URL}/`),
@@ -42,14 +44,15 @@ export const metadata: Metadata = {
   creator: 'HashDam',
   publisher: 'HashDam',
   applicationName: 'HashDam',
+  manifest: `${SITE_URL}/site.webmanifest`,
   icons: {
     icon: [
-      { url: '/images/logo-hash.png', type: 'image/png' },
+      { url: ICON_URL, type: 'image/png' },
     ],
     apple: [
-      { url: '/images/logo-hash.png' },
+      { url: ICON_URL },
     ],
-    shortcut: '/images/logo-hash.png',
+    shortcut: ICON_URL,
   },
   generator: 'Next.js',
   referrer: 'origin-when-cross-origin',
@@ -134,8 +137,6 @@ export default function RootLayout({
   return (
     <html lang="ko" className={`${inter.variable} ${poppins.variable} ${notoSansKR.variable}`}>
       <head>
-        <link rel="manifest" href="/site.webmanifest" />
-        
         {/* Font Preloads for LCP optimization */}
         <link
           rel="preload"
