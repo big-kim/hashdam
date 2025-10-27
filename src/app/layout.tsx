@@ -26,15 +26,19 @@ const notoSansKR = Noto_Sans_KR({
   display: 'swap',
 })
 
+const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://big-kim.github.io/hashdam'
+const SITE_URL = rawSiteUrl.replace(/\/$/, '')
+const SOCIAL_IMAGE_URL = `${SITE_URL}/images/FullLogo.png`
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://hashdam.io'),
+  metadataBase: new URL(`${SITE_URL}/`),
   title: {
     default: '해시파워 기반의 새로운 지속 성장 리워드 플랫폼 - HashDam',
     template: '%s | HashDam'
   },
   description: 'HashDam은 해시파워를 활용해 일일 코인 리워드를 제공하는 기업용 리워드 인프라입니다. API 연동으로 서비스에 쉽게 적용하고, 데이터는 투명하게 검증됩니다.',
   keywords: ['해시파워 리워드', '고객 리워드 플랫폼', 'HashDam', '해시댐', 'B2B 리워드', 'API 연동', '코인 리워드', '지속가능 리워드', '멤버십 솔루션', '로열티 프로그램', '데이터 투명성'],
-  authors: [{ name: 'HashDam Team', url: 'https://hashdam.io' }],
+  authors: [{ name: 'HashDam Team', url: SITE_URL }],
   creator: 'HashDam',
   publisher: 'HashDam',
   applicationName: 'HashDam',
@@ -58,13 +62,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ko_KR',
-    url: 'https://hashdam.io/',
+    url: `${SITE_URL}/`,
     siteName: 'HashDam',
     title: '해시파워 기반의 새로운 지속 성장 리워드 플랫폼 - HashDam',
     description: 'HashDam은 해시파워를 활용해 일일 코인 리워드를 제공하는 기업용 리워드 인프라입니다. API 연동으로 서비스에 쉽게 적용하고, 데이터는 투명하게 검증됩니다.',
     images: [
       {
-        url: '/images/FullLogo.png',
+        url: SOCIAL_IMAGE_URL,
         width: 1200,
         height: 630,
         alt: 'HashDam - Full Logo',
@@ -81,16 +85,16 @@ export const metadata: Metadata = {
     title: '해시파워 기반의 새로운 지속 성장 리워드 플랫폼 - HashDam',
     description: 'HashDam은 해시파워를 활용해 일일 코인 리워드를 제공하는 기업용 리워드 인프라입니다. API 연동으로 서비스에 쉽게 적용하고, 데이터는 투명하게 검증됩니다.',
     images: {
-      url: '/images/FullLogo.png',
+      url: SOCIAL_IMAGE_URL,
       alt: 'HashDam - Full Logo',
     },
   },
   alternates: {
-    canonical: 'https://hashdam.io/',
+    canonical: `${SITE_URL}/`,
     languages: {
-      'ko': 'https://hashdam.io/',
-      'en': 'https://hashdam.io/en/',
-      'x-default': 'https://hashdam.io/',
+      'ko': `${SITE_URL}/`,
+      'en': `${SITE_URL}/en/`,
+      'x-default': `${SITE_URL}/`,
     },
   },
   other: {
@@ -124,8 +128,8 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         
         {/* Favicon Settings */}
-        <link rel="icon" type="image/png" href="/images/logo_#.png" />
-        <link rel="apple-touch-icon" href="/images/logo_#.png" />
+        <link rel="icon" type="image/png" href="/images/logo_%23.png" />
+        <link rel="apple-touch-icon" href="/images/logo_%23.png" />
         <link rel="shortcut icon" href="/favicon.ico" />
         
         {/* Font Preloads for LCP optimization */}
@@ -165,8 +169,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "HashDam",
-              "url": "https://hashdam.io",
-              "logo": "https://hashdam.io/images/Logo.png",
+              "url": SITE_URL,
+              "logo": SOCIAL_IMAGE_URL,
               "description": "HashDam은 해시파워를 활용해 일일 코인 리워드를 제공하는 기업용 리워드 인프라입니다. API 연동으로 서비스에 쉽게 적용하고, 데이터는 투명하게 검증됩니다.",
               "foundingDate": "2024",
               "address": {
