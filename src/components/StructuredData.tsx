@@ -8,10 +8,10 @@ export function StructuredData() {
     "@type": "Organization",
     "name": "HashDam",
     "alternateName": "해시댐",
-    "url": "https://hashdam.io",
-    "logo": "https://hashdam.io/images/logo.png",
-    "description": "HashDam은 안전하고 효율적인 클라우드 마이닝 플랫폼입니다. 비트코인, 이더리움 등 다양한 암호화폐 채굴 서비스를 제공합니다.",
-    "foundingDate": "2023",
+    "url": "https://big-kim.github.io/hashdam",
+    "logo": "https://big-kim.github.io/hashdam/images/FullLogo.png",
+    "description": "HashDam은 해시파워를 활용해 일일 코인 리워드를 제공하는 기업용 리워드 인프라입니다. API 연동으로 서비스에 쉽게 적용하고, 데이터는 투명하게 검증됩니다.",
+    "foundingDate": "2024",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+82-2-1234-5678",
@@ -35,15 +35,15 @@ export function StructuredData() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "HashDam",
-    "url": "https://hashdam.io",
-    "description": "클라우드 마이닝 플랫폼 | 비트코인 채굴 서비스",
+    "url": "https://big-kim.github.io/hashdam",
+    "description": "해시파워 기반의 새로운 지속 성장 리워드 플랫폼 - HashDam",
     "publisher": {
       "@type": "Organization",
       "name": "HashDam"
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://hashdam.io/search?q={search_term_string}",
+      "target": "https://big-kim.github.io/hashdam/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -51,13 +51,13 @@ export function StructuredData() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "클라우드 마이닝 서비스",
-    "description": "비트코인, 이더리움 등 다양한 암호화폐 채굴 서비스",
+    "name": "해시파워 리워드 서비스",
+    "description": "해시파워를 활용한 일일 코인 리워드 인프라",
     "provider": {
       "@type": "Organization",
       "name": "HashDam"
     },
-    "serviceType": "클라우드 마이닝",
+    "serviceType": "리워드 플랫폼",
     "areaServed": {
       "@type": "Country",
       "name": "South Korea"
@@ -106,25 +106,25 @@ export function StructuredData() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://hashdam.io"
+        "item": "https://big-kim.github.io/hashdam"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Features",
-        "item": "https://hashdam.io#features"
+        "item": "https://big-kim.github.io/hashdam#features"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Calculator",
-        "item": "https://hashdam.io#calculator"
+        "item": "https://big-kim.github.io/hashdam#calculator"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Pricing",
-        "item": "https://hashdam.io#pricing"
+        "item": "https://big-kim.github.io/hashdam#pricing"
       }
     ]
   };

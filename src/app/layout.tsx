@@ -27,9 +27,9 @@ const notoSansKR = Noto_Sans_KR({
 })
 
 const SITE_URL = 'https://big-kim.github.io/hashdam'
-const SOCIAL_IMAGE_PATH = '/images/FullLogo.png'
+const SOCIAL_IMAGE_PATH = '/hashdam/images/social-preview.png'
 const SOCIAL_IMAGE_URL = `${SITE_URL}${SOCIAL_IMAGE_PATH}`
-const ICON_PATH = '/images/logo-hash.png'
+const ICON_PATH = '/hashdam/images/logo-hash.png'
 const ICON_URL = `${SITE_URL}${ICON_PATH}`
 
 export const metadata: Metadata = {
