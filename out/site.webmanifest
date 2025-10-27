@@ -5,26 +5,8 @@
   "start_url": "/hashdam/",
   "icons": [
     {
-      "src": "/hashdam/images/FullLogo.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/hashdam/images/FullLogo.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
       "src": "/hashdam/images/logo-hash.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/hashdam/images/logo-hash.png",
-      "sizes": "512x512",
+      "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     }

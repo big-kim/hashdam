@@ -27,9 +27,9 @@ const notoSansKR = Noto_Sans_KR({
 })
 
 const SITE_URL = 'https://big-kim.github.io/hashdam'
-const SOCIAL_IMAGE_PATH = '/hashdam/images/social-preview.png'
+const SOCIAL_IMAGE_PATH = '/images/social-preview.png'
 const SOCIAL_IMAGE_URL = `${SITE_URL}${SOCIAL_IMAGE_PATH}`
-const ICON_PATH = '/hashdam/images/logo-hash.png'
+const ICON_PATH = '/images/logo-hash.png'
 const ICON_URL = `${SITE_URL}${ICON_PATH}`
 
 export const metadata: Metadata = {
@@ -46,13 +46,9 @@ export const metadata: Metadata = {
   applicationName: 'HashDam',
   manifest: `${SITE_URL}/site.webmanifest`,
   icons: {
-    icon: [
-      { url: ICON_URL, type: 'image/png' },
-    ],
-    apple: [
-      { url: ICON_URL },
-    ],
-    shortcut: ICON_URL,
+    icon: '/images/logo-hash.png',
+    apple: '/images/logo-hash.png',
+    shortcut: '/images/logo-hash.png',
   },
   generator: 'Next.js',
   referrer: 'origin-when-cross-origin',
